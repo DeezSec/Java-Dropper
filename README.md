@@ -1,8 +1,6 @@
 # Java-Dropper
 ![vx](https://art.vx-underground.org/art/c92ebe07-2ac3-4dce-8168-b418e20c1579.png)
-
-A Malware Dropper written in Java, which works as intended!
-
+No more clumsy Payload transfer methods, when you have the Ultimate droppers available.
 This is simply a dropper which helps in delivering the payload to your victim. Let's go through the process step-by-step.
 
 # Requirements
