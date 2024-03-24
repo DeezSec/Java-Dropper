@@ -42,6 +42,7 @@ you can name the jar file as you wish, i'm using installer as the name, replace 
 # Payload on Victim's System
 
 - once the victim double clicks on the shell script it would automatically extract the jar file and then download the payload.
+
 <a href="https://ibb.co/3CH1Kbg"><img src="https://i.ibb.co/bKn1tVc/payload.jpg" alt="payload" border="0"></a>
 
 # Some Resources that Might Help
