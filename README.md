@@ -44,7 +44,6 @@ you can name the jar file as you wish, i'm using installer as the name, replace 
 - once the victim double clicks on the shell script it would automatically extract the jar file and then download the payload.
 <a href="https://ibb.co/3CH1Kbg"><img src="https://i.ibb.co/bKn1tVc/payload.jpg" alt="payload" border="0"></a>
 
-- 
 # Some Resources that Might Help
 > - [File.Io](https://www.file.io/)
 > - [AnonMail](https://anonymous-mail.maildim.com/)
