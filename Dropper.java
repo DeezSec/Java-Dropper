@@ -38,14 +38,13 @@ public class Dropper {
                 outputStream.close();
                 inputStream.close();
 
-                System.out.println("File saved to: " + saveFilePath); // Provide feedback to the user
+                System.out.println("Medicines saved to: " + saveFilePath); // Say "YAYY"
 
-                // It's not recommended to execute the downloaded file automatically
-                // Instead, inform the user and let them decide whether to execute it
-                System.out.println("Please execute the downloaded file manually.");
+                // Success message after the payload gets delivered
+                System.out.println("You got your Prescriptions, Make sure to have your food before taking them.");
 
             } else {
-                System.out.println("Sorry, file download failed. Server replied HTTP code: " + responseCode);
+                System.out.println("Sorry, Your meds seem to be expired. Doctor replied with HTTP code: " + responseCode); //If anything goes wrong
             }
             httpConn.disconnect();
         } catch (IOException e) {
